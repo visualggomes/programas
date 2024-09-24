@@ -1,0 +1,27 @@
+TIMEOUT de periféricos 
+
+- Acessar servidor SIGANET via SSH (PuTTy);
+- Acessar o banco de dados (MySQL); 
+	
+	-mysql> show databases;   (  p/ ver qual nome do banco-  siganet3)
+	-mysql> use siganet3;
+	-mysql> select * from variaveis;
+	-mysql> Update variaveis set valor = 4000 where id = 2;
+	-mysql> Update variaveis set valor = 1600 where id = 3;
+	
+( vai dobrar  esses 2 campos o 2 e 3 , id 2 estava 2000 e id 3 estava 800. pelos comandos dobrar esse valor)
+ 
+ 
+Aumentar o tempo de timeout dos periféricos
+2 - timeout de resposta
+3 - timeout de dados
+
+ 
++----+-------+--------+
+| id | valor | string |
++----+-------+--------+
+|  1 |    60 | NULL   |
+|  2 |  2000 | NULL   |(Padróes)
+|  3 |   800 | NULL   |
+Update variaveis set valor = xxxx where id = 2;
+Update variaveis set valor = xxxx where id = 3;
